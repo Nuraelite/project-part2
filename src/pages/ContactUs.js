@@ -15,7 +15,7 @@ const ContactUs = () => {
           We provide support in multiple languages.
         </p>
       </div>
-      <div className="contact-us-adress">
+      <div className="contact-us-address">
         <h2>Address</h2>
         <p>
           Premises NO. 19948-001, IFZA Business Park, DDP Dubai U.A.E

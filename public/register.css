@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  background-color: #4f4e4e;
+  padding: 20px;
+  border: 5px solid #474646;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+
+.container h1 {
+  color: #d9d0d0;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+  width: calc(100% - 22px); /* Ширина инпута за вычетом внутренних отступов */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+}
+
+.container label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.container label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.container button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.container p {
+  margin-top: 15px;
+}
+
+.container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.container a.create-account-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #007bff; /* Цвет текста */
+  padding: 10px 20px; /* Поля кнопки */
+  border: 1px solid #007bff; /* Граница */
+  border-radius: 5px; /* Скругление углов */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.container a.create-account-button:hover {
+  background-color: #007bff; /* Цвет фона при наведении */
+  color: #fff; /* Цвет текста при наведении */
+}
+

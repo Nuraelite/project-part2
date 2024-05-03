@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Pips</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Funding Pips</h1>
+        <form action="/signin" method="POST">
+            <h2>Sign in your account</h2>
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="remember">
+                <input type="checkbox" id="remember" name="remember">
+                Remember me
+              </label>
+              
+
+            <button type="submit">Sign in</button>
+        </form>
+        <p><a href="#" onclick="toggleForm()" class="create-account-button">Create Account</a></p>
+        <p><a href="#">Forgot password?</a></p>
+        <p><a href="#">Privacy policy</a></p>
+
+    </div>
+
+    <div id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <form action="/signup" method="POST">
+            <label for="registerEmail">Your email</label>
+            <input type="email" id="registerEmail" name="email" required>
+
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var registerForm = document.getElementById('registerForm');
+            if (registerForm.style.display === 'none') {
+                registerForm.style.display = 'block';
+            } else {
+                registerForm.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

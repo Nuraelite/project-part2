@@ -35,7 +35,7 @@ header {
 
 .nav_bar a {
   text-decoration: none;
-  color: #383b38;
+  color: #afb8af;
   font-family: 'Segoe UI', sans-serif;
   
   font-size: 11pt;
@@ -79,3 +79,26 @@ header {
  .btn:hover {
   background-color: #0e3ea4;
  }
+
+ .buy-challenge-link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* CSS код для стилизации кнопки */
+.custom-button {
+  background-color: transparent; /* Прозрачный фон */
+  border: none; /* Убираем границу */
+  color: blue; /* Синий цвет текста */
+  font-size: 16px; /* Размер текста */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border-radius: 5px; /* Скругление углов */
+  outline: none; /* Убираем контур фокуса */
+  transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.custom-button:hover {
+  background-color: blue; /* Изменяем цвет фона при наведении */
+  color: white; /* Изменяем цвет текста при наведении */
+}

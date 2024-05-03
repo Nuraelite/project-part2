@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+
 function Header() {
+
+
   return (
     <header>
       <Link to="/">
@@ -12,7 +15,7 @@ function Header() {
         />
       </Link>
       <ul className="nav_bar">
-          <li>
+        <li>
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -22,8 +25,9 @@ function Header() {
           <Link to="/contact-us">Contact Us</Link>
         </li>
         <li>
-          <Link to="/profile"></Link>
-          <button class="btn">Buy Challenge</button>
+          <Link to="/buy-challenges">
+        <button  className="custom-button">Buy Challenges</button>
+        </Link>
         </li>
       </ul>
     </header>

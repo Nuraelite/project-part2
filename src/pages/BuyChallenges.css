@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #4a90e2;
+  --hover-color: #357abd;
+  --background-even: #f7f7f7;
+  --background-odd: #ffffff;
+  --background-hover: #e1f5fe;
+  --text-color: #333;
+  --border-color: #e1e1e1;
+  --border-radius: 4px;
+}
+
+.buy-challenges {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+.buy-challenges-container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buy-challenges-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.buy-challenges-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.buy-challenges-table th,
+.buy-challenges-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.buy-challenges-table th {
+  background-color: var(--background-even);
+  font-weight: bold;
+}
+
+.buy-challenges-card:nth-child(even) {
+  background-color: var(--background-even);
+}
+
+.buy-challenges-card:nth-child(odd) {
+  background-color: var(--background-odd);
+}
+
+.buy-challenges-card:hover {
+  background-color: var(--background-hover);
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: var(--hover-color);
+}
